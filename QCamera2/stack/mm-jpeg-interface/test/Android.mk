@@ -9,6 +9,7 @@ LOCAL_CFLAGS := -DCAMERA_ION_HEAP_ID=ION_IOMMU_HEAP_ID
 LOCAL_CFLAGS += -Werror
 LOCAL_CFLAGS += -D_ANDROID_
 LOCAL_CFLAGS += -include mm_jpeg_dbg.h
+LOCAL_CFLAGS += -Wno-error=unused-parameter
 
 ifeq ($(strip $(TARGET_USES_ION)),true)
 LOCAL_CFLAGS += -DUSE_ION
